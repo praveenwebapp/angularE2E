@@ -1,0 +1,44 @@
+<div class="container">
+  <h2 class="mt-5 mx-auto text-center">data binding</h2>
+  <p class="text-danger">Interpolation</p>
+
+  <p>{{learning}}{{Course}}</p>
+
+  <h2 class="text-center">data binding</h2>
+  <div>
+    <p class="text-danger">Property binding</p>
+    <input class="" type="" name="" id="" [value]="value" />
+
+    <div class="container h-50 w-25">
+      <img [src]="image" height="200" />
+    </div>
+  </div>
+
+  <div>
+    <p>Event Binding</p>
+
+    <button (click)="onClick()" class="text-info w-3 h-25">Submit</button>
+
+    <select (change)="onChange()">
+      <option value="Country">Country</option>
+      <option value="Ind">India</option>
+
+      <option value="usa">United State</option>
+
+      <option value="Ger">Germany</option>
+    </select>
+  </div>
+
+
+  <div>
+    <p>Two way data binding</p>
+
+    <input type="text" id="" value="" [(ngModel)]="learning" /> {{learning}}
+
+
+  </div>
+
+  
+</div>
+
+ <
