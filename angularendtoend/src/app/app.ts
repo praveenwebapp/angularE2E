@@ -8,13 +8,26 @@ import { StructutalDirective } from './structutal-directive/structutal-directive
 import { StructuraldiretiveNgforFor } from './structuraldiretive-ngfor-for/structuraldiretive-ngfor-for';
 import { StructuraldirectiveNgswitchvsswitch } from './structuraldirective-ngswitchvsswitch/structuraldirective-ngswitchvsswitch';
 import { AttributeDirectives } from './attribute-directives/attribute-directives';
+import { sign } from 'crypto';
+import { Signals } from './signals/signals';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,User,Databinding,CommonModule,Directives,StructutalDirective,StructuraldiretiveNgforFor,StructuraldirectiveNgswitchvsswitch,AttributeDirectives],
-  standalone:true,
+  imports: [
+    RouterOutlet,
+    User,
+    Databinding,
+    CommonModule,
+    Directives,
+    StructutalDirective,
+    StructuraldiretiveNgforFor,
+    StructuraldirectiveNgswitchvsswitch,
+    AttributeDirectives,
+    Signals,
+  ],
+  standalone: true,
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
 export class App {
   protected title = 'angularendtoend';
