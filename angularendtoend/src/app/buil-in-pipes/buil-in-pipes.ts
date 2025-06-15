@@ -1,13 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { of } from 'rxjs';
-import { CustomPipe } from "../pipes/custom-pipe";
+import { CustomPipe  } from "../pipes/custom-pipe";
+import { ImpurePipesPipe } from '../pipes/impure-pipes-pipe';
+import { PurePipesPipe } from '../pipes/pure-pipes-pipe';
 
 @Component({
   selector: 'app-buil-in-pipes',
-  imports: [CommonModule, CustomPipe],
+  imports: [CommonModule, CustomPipe , ImpurePipesPipe , PurePipesPipe],
   templateUrl: './buil-in-pipes.html',
-  styleUrl: './buil-in-pipes.scss'
+  styleUrl: './buil-in-pipes.scss' 
 })
 export class BuilInPipes {
 
