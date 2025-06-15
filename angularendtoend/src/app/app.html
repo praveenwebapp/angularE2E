@@ -1,12 +1,42 @@
-<!-- <app-user></app-user> -->
+<nav class="navbar navbar-expand-lg bg-body-secondary">
+  <div class="container-fluid">
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="user">User</a>
+        </li>
 
-<!-- <app-structutal-directive></app-structutal-directive> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="profile">Profile</a>
+        </li> -->
 
-<!-- <app-directives></app-directives>
- <app-databnnding></app-databnnding> -->
- <!-- <app-structuraldiretive-ngfor-for></app-structuraldiretive-ngfor-for> -->
-  <!-- <app-structuraldirective-ngswitchvsswitch></app-structuraldirective-ngswitchvsswitch> -->
-   <!-- <app-attribute-directives></app-attribute-directives> -->
-    <!-- <app-signals></app-signals> -->
-     <app-linked-signals></app-linked-signals>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/data-binding">Data-Binding</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Directives
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLinkActive="active" [routerLink]="'structural-directive'">Structural Directive</a></li>
+            <li><a class="dropdown-item" routerLinkActive="active" [routerLink]="['attribute-directive']">Attribute-Directive</a></li>
+          </ul>
+        </li>
+
+       
+
+       
+
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
 <router-outlet></router-outlet>

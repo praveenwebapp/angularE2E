@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { User } from './user/user';
 import { Databinding } from './databinding/databinding';
 import { CommonModule } from '@angular/common';
@@ -11,21 +11,25 @@ import { AttributeDirectives } from './attribute-directives/attribute-directives
 import { sign } from 'crypto';
 import { Signals } from './signals/signals';
 import { LinkedSignals } from './linked-signals/linked-signals';
+import { Pagenotfound } from './pagenotfound/pagenotfound';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    User,
-    Databinding,
-    CommonModule,
-    Directives,
-    StructutalDirective,
-    StructuraldiretiveNgforFor,
-    StructuraldirectiveNgswitchvsswitch,
-    AttributeDirectives,
-    Signals,
-    LinkedSignals,
+    RouterLink,
+    RouterLinkActive,
+    // User,
+    // Databinding,
+    // CommonModule,
+    // Directives,
+    // StructutalDirective,
+    // StructuraldiretiveNgforFor,
+    // StructuraldirectiveNgswitchvsswitch,
+    // AttributeDirectives,
+    // Signals,
+    // LinkedSignals,
+    // Pagenotfound,
   ],
   standalone: true,
   templateUrl: './app.html',
