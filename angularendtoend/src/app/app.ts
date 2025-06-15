@@ -10,6 +10,7 @@ import { StructuraldirectiveNgswitchvsswitch } from './structuraldirective-ngswi
 import { AttributeDirectives } from './attribute-directives/attribute-directives';
 import { sign } from 'crypto';
 import { Signals } from './signals/signals';
+import { LinkedSignals } from './linked-signals/linked-signals';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ import { Signals } from './signals/signals';
     StructuraldirectiveNgswitchvsswitch,
     AttributeDirectives,
     Signals,
+    LinkedSignals,
   ],
   standalone: true,
   templateUrl: './app.html',
