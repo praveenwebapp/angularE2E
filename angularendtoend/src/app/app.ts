@@ -5,10 +5,12 @@ import { Databinding } from './databinding/databinding';
 import { CommonModule } from '@angular/common';
 import { Directives } from './directives/directives';
 import { StructutalDirective } from './structutal-directive/structutal-directive';
+import { StructuraldiretiveNgforFor } from './structuraldiretive-ngfor-for/structuraldiretive-ngfor-for';
+import { StructuraldirectiveNgswitchvsswitch } from './structuraldirective-ngswitchvsswitch/structuraldirective-ngswitchvsswitch';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,User,Databinding,CommonModule,Directives,StructutalDirective],
+  imports: [RouterOutlet,User,Databinding,CommonModule,Directives,StructutalDirective,StructuraldiretiveNgforFor,StructuraldirectiveNgswitchvsswitch],
   standalone:true,
   templateUrl: './app.html',
   styleUrl: './app.scss'
