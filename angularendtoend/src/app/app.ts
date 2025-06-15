@@ -7,10 +7,11 @@ import { Directives } from './directives/directives';
 import { StructutalDirective } from './structutal-directive/structutal-directive';
 import { StructuraldiretiveNgforFor } from './structuraldiretive-ngfor-for/structuraldiretive-ngfor-for';
 import { StructuraldirectiveNgswitchvsswitch } from './structuraldirective-ngswitchvsswitch/structuraldirective-ngswitchvsswitch';
+import { AttributeDirectives } from './attribute-directives/attribute-directives';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,User,Databinding,CommonModule,Directives,StructutalDirective,StructuraldiretiveNgforFor,StructuraldirectiveNgswitchvsswitch],
+  imports: [RouterOutlet,User,Databinding,CommonModule,Directives,StructutalDirective,StructuraldiretiveNgforFor,StructuraldirectiveNgswitchvsswitch,AttributeDirectives],
   standalone:true,
   templateUrl: './app.html',
   styleUrl: './app.scss'
