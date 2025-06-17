@@ -7,6 +7,7 @@ import { AttributeDirectives } from './attribute-directives/attribute-directives
 import { Pagenotfound } from './pagenotfound/pagenotfound';
 import { BuilInPipes } from './buil-in-pipes/buil-in-pipes';
 import { TemplateDrivenForms } from './Forms/template-driven-forms/template-driven-forms';
+import { ReactiveForm } from './Forms/reactive-form/reactive-form';
 
 export const routes: Routes = [
     // { path: '', component: UserComponent },
@@ -17,5 +18,6 @@ export const routes: Routes = [
     { path: 'attribute-directive', component: AttributeDirectives },
     { path: 'Builin-Pipes', component: BuilInPipes },
     { path: 'T-Form', component: TemplateDrivenForms },
+    { path: 'R-Form', component: ReactiveForm },
     { path: '**', component:Pagenotfound }
 ];
