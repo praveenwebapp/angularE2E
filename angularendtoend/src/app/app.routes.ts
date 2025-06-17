@@ -6,6 +6,7 @@ import { StructutalDirective } from './structutal-directive/structutal-directive
 import { AttributeDirectives } from './attribute-directives/attribute-directives';
 import { Pagenotfound } from './pagenotfound/pagenotfound';
 import { BuilInPipes } from './buil-in-pipes/buil-in-pipes';
+import { TemplateDrivenForms } from './Forms/template-driven-forms/template-driven-forms';
 
 export const routes: Routes = [
     // { path: '', component: UserComponent },
@@ -15,5 +16,6 @@ export const routes: Routes = [
     { path: 'structural-directive', component: StructutalDirective },
     { path: 'attribute-directive', component: AttributeDirectives },
     { path: 'Builin-Pipes', component: BuilInPipes },
+    { path: 'T-Form', component: TemplateDrivenForms },
     { path: '**', component:Pagenotfound }
 ];
